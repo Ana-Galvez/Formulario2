@@ -34,6 +34,7 @@
             lblDato2 = new Label();
             txtDato2 = new TextBox();
             txtDato1 = new TextBox();
+            btnAceptarCuadroTexto = new Button();
             SuspendLayout();
             // 
             // btnAceptar
@@ -47,6 +48,7 @@
             btnAceptar.TabIndex = 0;
             btnAceptar.Text = "ACEPTAR";
             btnAceptar.UseVisualStyleBackColor = false;
+            btnAceptar.Click += btnAceptar_Click;
             // 
             // btnCalculo
             // 
@@ -96,11 +98,25 @@
             txtDato1.Size = new Size(274, 32);
             txtDato1.TabIndex = 5;
             // 
+            // btnAceptarCuadroTexto
+            // 
+            btnAceptarCuadroTexto.BackColor = Color.FromArgb(192, 192, 0);
+            btnAceptarCuadroTexto.Font = new Font("Times New Roman", 15.75F, FontStyle.Bold);
+            btnAceptarCuadroTexto.ForeColor = Color.FromArgb(0, 0, 192);
+            btnAceptarCuadroTexto.Location = new Point(551, 230);
+            btnAceptarCuadroTexto.Name = "btnAceptarCuadroTexto";
+            btnAceptarCuadroTexto.Size = new Size(149, 101);
+            btnAceptarCuadroTexto.TabIndex = 6;
+            btnAceptarCuadroTexto.Text = "ACEPTAR CUADRO DE TEXTO";
+            btnAceptarCuadroTexto.UseVisualStyleBackColor = false;
+            btnAceptarCuadroTexto.Click += btnAceptarCuadroTexto_Click;
+            // 
             // frmIngresoYMuestraDeDatos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnAceptarCuadroTexto);
             Controls.Add(txtDato1);
             Controls.Add(txtDato2);
             Controls.Add(lblDato2);
@@ -124,5 +140,6 @@
         private Label lblDato2;
         private TextBox txtDato2;
         private TextBox txtDato1;
+        private Button btnAceptarCuadroTexto;
     }
 }
