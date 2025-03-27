@@ -61,6 +61,7 @@
             btnCalculo.TabIndex = 1;
             btnCalculo.Text = "CALCULO";
             btnCalculo.UseVisualStyleBackColor = false;
+            btnCalculo.Click += btnCalculo_Click;
             // 
             // lblDato1
             // 
